@@ -42,7 +42,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "greencycle-connect",
+              "baseHref": "greencycle-app",
               "budgets": [
                 {
                   "type": "initial",
