@@ -38,6 +38,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "greencycle-connect",
               "budgets": [
                 {
                   "type": "initial",
