@@ -1,1 +1,57 @@
-<p>rewards works!</p>
+<div class="page-title">
+    <h1>Rewards</h1>
+   
+</div>
+
+<div class="page-content">
+
+    <div class="content mb-0 mt-0">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h1 class="mb-0 font-15">Discount</h1>
+            </div>
+            <div class="ms-auto align-self-center">
+                <a href="#" class="float-end font-12 font-400"></a>
+            </div>
+        </div>
+    </div>
+
+    <app-rewards-card />
+
+
+    <div class="content mt-0 mb-0">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h1 class="mb-0 font-15">Events</h1>
+            </div>
+            <div class="ms-auto align-self-center">
+                <a href="#" class="float-end font-12 font-400">See All</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="list u-flex">
+        @for(item of [0,1,2,3,4,5];track $index){
+        <app-rewards-card-item [points]="$index * 10 + 60" [name]="'Event Name '+$index" />
+        }
+    </div>
+
+
+
+    <div class="content mt-4 mb-0">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h1 class="mb-0 font-15">Coupons</h1>
+            </div>
+            <div class="ms-auto align-self-center">
+                <a href="#" class="float-end font-12 font-400">See All</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="list u-flex">
+        @for(item of [5,6,1,2,9];track $index){
+        <app-rewards-card-item [points]="$index * 10 + 60" [name]="'Discount Coupon for store ' +$index " />
+        }
+    </div>
+</div>

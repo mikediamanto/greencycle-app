@@ -1,0 +1,103 @@
+<div class="header header-fixed header-logo-center">
+    <a href="index.html" class="header-title">Start Recycling</a>
+    <a routerLink="/" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+    <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+    <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+    <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+</div>
+
+<div class="page-content header-clear-medium">
+
+    <div class="content mb-0">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h1 class="mb-0 font-15">Step 1 </h1>
+            </div>
+            <div class="ms-auto align-self-center">
+                <a href="#" class="float-end font-12 font-400"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-style">
+        <div class="text-center content">
+            <h1>Scan QR Code on bin</h1>
+            <p class="boxed-text-xl">
+                Scan the QR code seen on bin screen in order to start the process
+            </p>
+            <img width="250" class="qr-image generate-qr-auto mx-auto polaroid-effect shadow-l mb-3"
+                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://localhost/component-qr-generator.html">
+            <a _ngcontent-ng-c1003966903="" href="#" data-back-button=""
+                class="btn btn-full btn-l font-600 font-13 gradient-highlight mt-4 rounded-s border-0">Open Camera</a>
+        </div>
+    </div>
+
+    <div class="content mb-0">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h1 class="mb-0 font-15">Step 2 </h1>
+            </div>
+            <div class="ms-auto align-self-center">
+                <a href="#" class="float-end font-12 font-400"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-style">
+        <div class="content">
+            <h3>Recycle</h3>
+            <p>
+                Start recycling and you will see your products below in real time
+            </p>
+            <div class="d-flex mb-3">
+                <div>
+                    <img src="images/pictures/17s.jpg" width="110" class="rounded-s shadow-xl">
+                </div>
+                <div class="ps-3 w-100">
+                    <p class="mb-0 color-highlight">1x Item</p>
+                    <h1>500 points</h1>
+                    <h5 class="font-500">Plastic</h5>
+                </div>
+            </div>
+            
+            
+            <div class="divider"></div>
+                
+            <div class="d-flex mb-3">
+                <div>
+                    <img src="images/pictures/17s.jpg" width="110" class="rounded-s shadow-xl">
+                </div>
+                <div class="ps-3 w-100">
+                    <p class="mb-0 color-highlight">1x Item</p>
+                    <h1>500 points</h1>
+                    <h5 class="font-500">Organic</h5>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+                
+            <div class="d-flex mb-3">
+                <div>
+                    <img src="images/pictures/17s.jpg" width="110" class="rounded-s shadow-xl">
+                </div>
+                <div class="ps-3 w-100">
+                    <p class="mb-0 color-highlight">1x Item</p>
+                    <h1>500 points</h1>
+                    <h5 class="font-500">Paper</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a (click)="complete()" class="close-menu btn btn-margins btn-full gradient-highlight font-13 btn-l font-600 mt-3 rounded-sm">Complete</a>
+
+    @if(visible()){
+    <div id="menu-success-2" class="menu menu-box-bottom bg-green-dark rounded-m menu-active" data-menu-height="335" data-menu-effect="menu-over" style="display: block; height: 260px;">
+        <h1 class="text-center mt-4"><i class="fa fa-3x fa-check-circle scale-box color-white shadow-xl rounded-circle"></i></h1>
+        <h1 class="text-center mt-3 font-700 color-white">2000 points awarded</h1>
+        
+        <a routerLink="/" class="close-menu btn btn-m btn-center-m button-s shadow-l rounded-s text-uppercase font-600 bg-white color-black">Thanks!</a>
+    </div>
+}
+</div>
