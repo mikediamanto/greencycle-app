@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && rm -r docs/* && cp -r dist/greencycle-app/browser/. docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:greencycle-app": "node dist/greencycle-app/server/server.mjs"
