@@ -76,12 +76,12 @@
             <div class="d-flex">
                 <div class="pe-4">
                     <p class="font-600 color-highlight mb-0">Your Points</p>
-                    <h1>23,500</h1>
+                    <h1>{{totalPoints - usedPoints | number}}</h1>
                 </div>
                 <div class="w-100 pt-1">
-                    <h6 class="font-14 font-500">Total Won<span class="float-end ">3.115</span></h6>
+                    <h6 class="font-14 font-500">Total Won<span class="float-end ">{{totalPoints | number}}</span></h6>
                     <div class="divider mb-2 mt-1"></div>
-                    <h6 class="font-14 font-500">Used<span class="float-end ">1.315</span></h6>
+                    <h6 class="font-14 font-500">Used<span class="float-end ">{{usedPoints | number}}</span></h6>
                 </div>
             </div>
 
@@ -127,93 +127,6 @@
                 </div>
             </div>
         </div>
-        <div data-bs-parent="#tab-group-1" class="collapse" id="tab-2">
-            <div class="card card-style p-3">
-                <a href="#" data-menu="menu-invoice" class="d-flex">
-                    <div class="align-self-center">
-                        <span class="icon icon-s gradient-green color-white rounded-sm shadow-xxl"><i
-                                class="fab fa-spotify font-20"></i></span>
-                    </div>
-                    <div class="align-self-center">
-                        <h5 class="ps-3 mb-n1 font-15">Spotify Music</h5>
-                        <span class="ps-3 font-11 color-theme opacity-70">Monthly Subscription</span>
-                    </div>
-                    <div class="ms-auto text-end align-self-center">
-                        <h5 class="color-theme font-15 font-700 d-block mb-n1">$19.99</h5>
-                        <span class="color-green-dark font-11">15th August <i class="fa fa-check-circle"></i></span>
-                    </div>
-                </a>
-                <div class="divider my-3"></div>
-                <a href="#" data-menu="menu-invoice" class="d-flex">
-                    <div class="align-self-center">
-                        <span class="icon icon-s gradient-blue color-white rounded-sm shadow-xxl"><i
-                                class="fa fa-tint font-20"></i></span>
-                    </div>
-                    <div class="align-self-center">
-                        <h5 class="ps-3 mb-n1 font-15">Water Bill</h5>
-                        <span class="ps-3 font-11 color-theme opacity-70">Invoice: #415-4516-8565</span>
-                    </div>
-                    <div class="ms-auto text-end align-self-center">
-                        <strong class="color-theme font-14 d-block mb-n1">$21.25</strong>
-                        <span class="color-green-dark font-11 d-block">15th August <i
-                                class="fa fa-check-circle"></i></span>
-                    </div>
-                </a>
-                <div class="divider my-3"></div>
-                <a href="#" data-menu="menu-invoice" class="d-flex">
-                    <div class="align-self-center">
-                        <span class="icon icon-s gradient-yellow color-white rounded-sm shadow-xxl"><i
-                                class="fa fa-bolt font-20"></i></span>
-                    </div>
-                    <div class="align-self-center">
-                        <h5 class="ps-3 mb-n1 font-15">Electric Bill</h5>
-                        <span class="ps-3 font-11 color-theme opacity-70">Invoice: #415-4516-8565</span>
-                    </div>
-                    <div class="ms-auto text-end align-self-center">
-                        <strong class="color-theme font-14 d-block mb-n1">$43.52</strong>
-                        <span class="color-green-dark font-11 d-block">15th August <i
-                                class="fa fa-check-circle"></i></span>
-                    </div>
-                </a>
-                <div class="divider my-3"></div>
-                <a href="#" data-menu="menu-invoice" class="d-flex">
-                    <div class="align-self-center">
-                        <span class="icon icon-s gradient-teal color-white rounded-sm shadow-xxl"><i
-                                class="fa fa-cloud font-20"></i></span>
-                    </div>
-                    <div class="align-self-center">
-                        <h5 class="ps-3 mb-n1 font-15">Online Storage</h5>
-                        <span class="ps-3 font-11 color-theme opacity-70">Invoice: #415-4516-8565</span>
-                    </div>
-                    <div class="ms-auto text-end align-self-center">
-                        <strong class="color-theme font-14 d-block mb-n1">$43.52</strong>
-                        <span class="color-green-dark font-11 d-block">15th August <i
-                                class="fa fa-check-circle"></i></span>
-                    </div>
-                </a>
-                <div class="divider my-3"></div>
-                <a href="#" data-menu="menu-invoice" class="d-flex">
-                    <div class="align-self-center">
-                        <span class="icon icon-s gradient-pink color-white rounded-sm shadow-xxl"><i
-                                class="fab fa-dribbble font-20"></i></span>
-                    </div>
-                    <div class="align-self-center">
-                        <h5 class="ps-3 mb-n1 font-15">Dribbble</h5>
-                        <span class="ps-3 font-11 color-theme opacity-70">Yearly Subscription</span>
-                    </div>
-                    <div class="ms-auto text-end align-self-center">
-                        <strong class="color-theme font-14 d-block mb-n1">$35.50</strong>
-                        <span class="color-green-dark font-11 d-block">15th August <i
-                                class="fa fa-check-circle"></i></span>
-                    </div>
-                </a>
-                <div class="divider my-3"></div>
-                <p class="text-center font-11 opacity-50 mb-0">Tap any Bill to See the Invoice File</p>
-            </div>
-        </div>
     </div>
-
-
-
 
 </div>

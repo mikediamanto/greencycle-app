@@ -31,10 +31,14 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "public/fonts/css/fontawesome-all.min.css",
+              "src/styles.scss",
+              "src/styles/highlight_green-dark.css"
             ],
-            "scripts": [
-            ]
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": false,
+            "ssr": false
           },
           "configurations": {
             "production": {
